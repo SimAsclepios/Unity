@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
 
     public void SpawnEnnemy()
     {
-        Instantiate(Ennemy, t_Positions[Get_NewSpawnPos()].position, Quaternion.identity);            // .position pour parse en vector3 et non avoir un Transform si on ne le fait pas
+        Instantiate(Ennemy, t_Positions[Get_NewSpawnPos()].position, Quaternion.identity);           // .position pour parse en vector3 et non avoir un Transform si on ne le fait pas
         Invoke(nameof(SpawnEnnemy), f_FrequenceSpeed);
     }
 
